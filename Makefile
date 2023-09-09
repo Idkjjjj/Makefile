@@ -1249,10 +1249,6 @@ prepare0: archprepare
 # All the preparing..
 prepare: prepare0 prepare-objtool
 
-PHONY += remove-stale-files
-remove-stale-files:
-	$(Q)$(srctree)/scripts/remove-stale-files
-
 # Support for using generic headers in asm-generic
 asm-generic := -f $(srctree)/scripts/Makefile.asm-generic obj
 
